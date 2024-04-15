@@ -1,0 +1,11 @@
+﻿@using System.Threading.Tasks
+@model PortalBackend.Service.DTO.Request.AuthorizeRequestNotification
+@{
+    Layout = "_LayoutMail";
+
+}
+<p style="font-weight: 600; font-size: 18px; margin-bottom: 0;">Hi,</p>
+<p style="margin: 12px 0;">
+    Your @Model.Action for account with User Id @Model.UserId has been @Model.Status by @Model.Authorizer. Kindly log in to the portal to view the request.
+</p>
+<p style="margin: 12px 0;"><strong>Authorizer:</strong> @Model.Authorizer</p>

@@ -1,0 +1,15 @@
+﻿@using System.Threading.Tasks
+@model PortalBackend.Service.DTO.Request.WelcomeNotificationRequest
+@{
+    Layout = "_LayoutMail";
+
+}
+<p class="sm-leading-32" style="font-weight: 600; font-size: 20px; margin: 0 0 24px; --text-opacity: 1; color: #263238; color: rgba(38, 50, 56, var(--text-opacity));">
+    Welcome to  Ghana Portal
+</p>
+<p style="font-weight: 600; font-size: 18px; margin-bottom: 0;">Hi @Model.FirstName,</p>
+<p style="margin: 12px 0;">
+    You have been successfully profiled to access the  Congo Portal. Kindly visit the portal <a href="https://drc-portal.plc.com" class="hover-underline" style="--text-opacity: 1; color: #7367f0; color: rgba(115, 103, 240, var(--text-opacity)); text-decoration: none;">here</a> and login with your NT username and password.
+</p>
+<p style="margin: 12px 0;"><strong>Branch:</strong> @Model.Branch</p>
+<p style="margin: 12px 0;"><strong>User Role:</strong> @Model.Role</p>

@@ -1,0 +1,11 @@
+﻿@using System.Threading.Tasks
+@model PortalBackend.Service.DTO.Request.InitiateRequestNotification
+@{
+    Layout = "_LayoutMail";
+
+}
+<p style="font-weight: 600; font-size: 18px; margin-bottom: 0;">Hi,</p>
+<p style="margin: 12px 0;">
+    You have a pending @Model.Action on your queue for account with User Id @Model.UserId, Kindly log in to the portal to authorize the request.
+</p>
+<p style="margin: 12px 0;"><strong>Initiator:</strong> @Model.Initiator</p>
